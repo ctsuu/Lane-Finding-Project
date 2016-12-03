@@ -4,16 +4,19 @@ Udacity Self-Driving Car Engineer Class Project, due on Dec 6th, 2016
 # Reflection
 
 Image processing pipeline decription: 
-* 1. grayscale
-* 2. Canny edge
-* 3. Masking
-* 4. Hough Transform
-* 5. Initialize left and right slope values
-* 6. Append updated lane section slopes into slope list
-* 7. Drawing Left and Right lane makers
+* Grayscale
+* Canny edge
+* Masking
+* Hough Transform
+* Initialize left and right slope values
+* Append updated lane section slopes into slope list
+* Drawing Left and Right lane makers
 
 1. OpenCV Grayscale
-
+The OpenCV is:
+```
+cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+```
 2. Canny Edge Settings:
 
 3. Masking edges, regain setting
