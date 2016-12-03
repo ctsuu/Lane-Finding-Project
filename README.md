@@ -3,7 +3,7 @@ Udacity Self-Driving Car Engineer Class Project, due on Dec 6th, 2016
 
 # Reflection
 
-Image processing pipeline decription: 
+Image processing pipeline decription for: 
 * Grayscale
 * Canny edge
 * Masking
@@ -12,6 +12,9 @@ Image processing pipeline decription:
 * Append updated lane section slopes into slope list
 * Drawing Left and Right lane makers
 
+Additional decription for loading individual images, mp4 videos, make movies and real time play. 
+
+# Image Process Pipeline
 1. OpenCV Grayscale
 The OpenCV command from BGR color to gray scale is:
 ```
@@ -42,6 +45,10 @@ hough_lines_img = hough_lines(masked_edges, rho, theta, threshold, min_line_len,
 6. Take max slope for the left line maker, and min slope for the right maker. 
 
 7. Apex point is near the middle of the image, for image shape 960 x 540, set delta = 1000, will move the left and right bottom point out of the image. 
+
+Use moviepy to make output video
+
+Use OpenCV to play video and process in real time
 
 Challenge Video:
 The provided challenge.mp4 is a challenge. 
