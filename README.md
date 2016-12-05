@@ -16,6 +16,25 @@ Image processing pipeline decription for:
 Additional decription for loading individual images, mp4 videos, make movies and real time play. 
 
 # Current Image Process Pipeline
+First, I create a images.csv file to list all test images in the test_images folder. Then I import the file into a list, for display all test images and results in one shot. 
+```
+import os
+from numpy import arange 
+
+os.listdir("test_images/")
+
+img_list = []
+
+#read images.csv
+with open("test_images/images.csv") as images:
+    for line in images:
+        img_list.append(line.split()[0])
+
+first_col = arange(1,2*len(img_list),2)
+second_col = first_col+1
+```
+My approach is to find the left and right apex points first, then work down to the bottem of the image. The initial apex point is close to the center of the image. Apex left and right are close, but not touch each other, the openning is the vanish point, and for the curve to fit in as well.
+
 1. OpenCV Grayscale
 The OpenCV command from BGR color to gray scale is:
 ```
