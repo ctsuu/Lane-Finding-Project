@@ -1,5 +1,6 @@
 # Lane-Finding-Project
 Udacity Self-Driving Car Engineer Class Project, due on Dec 6th, 2016
+![test_image_index](https://cloud.githubusercontent.com/assets/22917810/20874031/562b0b74-ba6b-11e6-801e-1bacaa9398e6.png)
 
 # Reflection
 
