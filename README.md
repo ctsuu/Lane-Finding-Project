@@ -141,6 +141,10 @@ Therefore, this is not the ideal method for one program suit all approach.
 
 # Future work/Possible improvements:
 * Dynamic masking and multi section masking
-    I am planning to detect multi-zones such as 10 second ahead, 3 second ahead, 2 second ahead and 1 second ahead. 
+    I am planning to detect multi-zones such as 
+    * 10 second ahead, 
+    * 3 second ahead, 
+    * 2 second ahead and 
+    * 1 second ahead. 
 * Add CNN detection for dynamic masking
-    Neroun Network has the potential for one program suit all situation as long as we have training set to cover it.  
+    * Neroun Network has the potential for one program suit all situation as long as we have training set to cover it.  
