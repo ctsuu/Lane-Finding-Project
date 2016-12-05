@@ -104,6 +104,8 @@ clip1 = VideoFileClip("solidWhiteRight.mp4") # open target video
 white_clip = clip1.fl_image(process_image) #NOTE: this function expects color images!!
 %time white_clip.write_videofile(white_output, audio=False)
 ```
+
+# Potential Shortcomings of the current pipeline:
 * Use OpenCV to play video and process in real time
 I created lane_finding_main.py to play video and review the annotated lane lines in real time.
 For some reason, the openCV 3.0 could not play mp4 video, I have to switch python 3.5 back to 2.7 by modify the .bashrc file
@@ -115,7 +117,7 @@ comment the export line.
 The main programe load the video, and call processing function to proceed. 
 Display the output video, without saving the file.
 
-# Potential Shortcomings of the current pipeline:
+* Challenge video
 The provided challenge.mp4 is a challenge. 
 The existing code is not working for this video yet. 
 
