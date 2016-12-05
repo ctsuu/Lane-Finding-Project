@@ -14,7 +14,7 @@ Image processing pipeline decription for:
 
 Additional decription for loading individual images, mp4 videos, make movies and real time play. 
 
-# Image Process Pipeline
+# Current Image Process Pipeline
 1. OpenCV Grayscale
 The OpenCV command from BGR color to gray scale is:
 ```
@@ -50,10 +50,11 @@ Use moviepy to make output video
 
 Use OpenCV to play video and process in real time
 
-Challenge Video:
+
+# Potential Shortcomings of the current pipeline:
 The provided challenge.mp4 is a challenge. 
 The existing code is not working for this video yet. 
 
-Future work:
+# Future work/Possible improvements:
 * Dynamic masking
 * Add CNN detection for dynamic masking 
