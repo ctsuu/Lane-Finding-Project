@@ -4,16 +4,12 @@ Udacity Self-Driving Car Engineer Class Project, due on Dec 6th, 2016
 
 # Reflection
 
-Image processing pipeline decription for: 
-* Grayscale
-* Canny edge
-* Masking
-* Hough Transform
-* Initialize left and right slope values
-* Append updated lane section slopes into slope list
-* Drawing Left and Right lane makers
-
-Additional decription for loading individual images, mp4 videos, make movies and real time play. 
+My reflection of this project includes: 
+* Current Image processing pipeline decription: 
+* Additional decription for loading all individual images
+* Play mp4 videos
+* Attempt for challenge video
+* Future work 
 
 # Current Image Process Pipeline
 First, I create a images.csv file to list all test images in the test_images folder. Then I import the file into a list, for display all test images and results in one shot. 
@@ -119,8 +115,32 @@ Display the output video, without saving the file.
 
 * Challenge video
 The provided challenge.mp4 is a challenge. 
-The existing code is not working for this video yet. 
+The existing code is not working very well for this video yet. 
+First, the apex point shift a lot, from 
+```
+# initial apexs Left and Right settings 
+apex_L_x = 450
+apex_L_y = 325
+apex_R_x = 510
+apex_R_y = 324
+```
+to 
+```
+apex_L_x = 600
+apex_L_y = 450
+apex_R_x = 720
+apex_R_y = 450
+```
+Also, the gard rail is close by on the left, it is a curved road, lot of markers on the road. 
+I have to change all setting manually to make it kind of working. 
+```
+python lane_finding_main.py
+```
+
+Therefore, this is not the ideal method for one program suit all approach.
 
 # Future work/Possible improvements:
-* Dynamic masking
-* Add CNN detection for dynamic masking 
+* Dynamic masking and multi section masking
+    I am planning to detect multi-zones such as 10 second ahead, 3 second ahead, 2 second ahead and 1 second ahead. 
+* Add CNN detection for dynamic masking
+    Neroun Network has the potential for one program suit all situation as long as we have training set to cover it.  
